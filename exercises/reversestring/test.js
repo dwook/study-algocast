@@ -9,5 +9,9 @@ test('Reverse reverses a string', () => {
 });
 
 test('Reverse reverses a string', () => {
+  expect(reverse('abcde')).toEqual('edcba');
+});
+
+test('Reverse reverses a string', () => {
   expect(reverse('  abcd')).toEqual('dcba  ');
 });

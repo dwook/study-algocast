@@ -16,4 +16,10 @@ function reverseInt(n) {
   return n < 0 ? Number(value) * -1 : Number(value);
 }
 
+// Solution #1
+function reverseInt(n) {
+  const reversed = n.toString().split("").reverse().join("");
+  return parseInt(reversed) * Math.sign(n);
+}
+
 module.exports = reverseInt;
